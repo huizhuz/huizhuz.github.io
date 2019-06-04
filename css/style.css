@@ -1,0 +1,175 @@
+/* Color palatte
+#fffdd0 cream
+#FFE6D0 pink
+#EAFFD0 green
+#c0cbff blue
+#7D1538 maroon
+#ffa500 orange
+#008000 green
+------------------------------*/
+
+/* Global styles
+------------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{ /*body selector selects the entire view point; codrop.com is good resource*/
+    font-family: 'Quicksand', sans-serif;
+    line-height:150%;
+    margin:0;
+}
+.btn{
+    text-decoration:none;
+    background:white;
+    color:#008000;
+    padding:15px;
+    display:inline-block;
+}
+a{
+    color: #008000;
+}
+a:hover{
+    text-decoration:none;/*When hover, the underline of the links disappear*/
+}
+h1{
+    font-size:50px;
+}
+h2 {
+    font-size:36px;
+}
+main h2{
+    font-family: 'Shadows Into Light', cursive;
+}
+h3{
+    margin:0;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.content-wrap{
+    max-width:800px;
+    /*width: 80%;*/
+    margin:0 auto;
+    padding:60px 20px;
+    overflow:hidden;
+}
+/*.box{
+    background:papayawhip;
+    border:2px solid gainsboro;
+    padding:5px;
+    height:120px;
+    overflow:auto;
+}*/
+
+/* Header and footer styles
+------------------------------*/
+header{
+    padding-top:50px;
+    position:relative;
+}
+.download{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+header, footer{
+    background:rgba(217, 238, 167, 0.5);
+}
+header p, footer p{
+    color: rgb(99, 94, 94);
+}
+/* header */
+
+header h1{
+    font-family: 'Shadows Into Light', cursive;
+}
+header h1,header h2{
+    line-height: 1em;
+}
+.profile-img{
+    border-radius:20%;
+}
+
+/* footer */
+footer{
+    text-align:center;
+}
+.contact-info a{
+    padding:10px;
+    display:inline-block;
+}
+
+
+/* Navigation
+------------------------------*/
+nav{
+    text-align:center;
+    background:white;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 800;
+}
+nav a{
+    display:inline-block;
+    padding:15px 20px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:700;
+}
+
+
+
+
+/* Work experience
+------------------------------*/
+.work{
+    background: rgba(248, 215, 187, 0.644);
+}
+h3~p{
+    margin:0;
+}
+.job-description{
+    margin-bottom: 25px;
+}
+
+/* Education
+------------------------------*/
+.education{
+    background: linear-gradient(rgba(255, 253, 208, 0.8),rgba(255, 253, 208, 0.5)),
+                url("../images/landscape.jpg") no-repeat fixed;
+    background-size: cover;
+}
+p + h3{
+    margin-top:30px; 
+}
+
+
+/* Media Queries
+------------------------------*/
+@media (min-width: 740px) {
+    .col-left{
+        width:35%;
+        float: left;
+        padding:20px;
+        /*min-height:270px;*/
+    }
+    .col-right{
+        width:65%;
+        float: left;
+        /*min-height:270px;*/
+    }
+}
+
+@media (max-width: 739px) {
+    header{
+        text-align:center;
+    }
+    .profile-img{
+        width: 200px;
+    }
+}
