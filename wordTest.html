@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Quiz</title>
+    <link rel="stylesheet" href="./WordTest/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="./WordTest/words.js" defer></script>
+    <script src="./WordTest/script.js" defer></script>
+
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Vocabulary quiz</h1>
+    </header>
+
+    <main>
+        <article class="intro">
+            <p>This is a vocabulary quiz. You will see the definition to each word. Your goal is to type the
+                corresponding words, as many as possible, in the field below. The one-minute countdown will start once
+                you click the start button. Good luck!
+            </p>
+        </article>
+
+        <section class="quizArea">
+            <div class="definition-wrapper">
+                <p id="definition">Click the start button to begin.</p>
+            </div>
+            <div class="input-wrapper">
+                <textarea id="quiz-area" name="quizarea" rows="2" placeholder="Type in the correct words!"></textarea>
+            </div>
+        </section>
+
+        <section class="meta">
+            <div id="clock">
+                <p class="countdown">01:00:00</p>
+            </div>
+            <div class="btn-wrapper">
+                <button class="btn" id="start">Start</button>
+                <button class="btn" id="skip">Skip</button>
+                <button class="btn" id="reset">Reset</button>
+            </div>
+        </section>
+
+        <section class="points-earned">
+            <span>You got <span id="points">0</span> right!</span>
+        </section>
+    </main>
+
+</body>
+
+</html>

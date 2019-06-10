@@ -1,0 +1,128 @@
+/* Color Theme
+#F1F2EB near white
+#EDDEA4 light mustard
+#BDC667 yellow-green
+#A20021 red
+#413C58 dark blue
+***************************************************************/
+
+
+/* Global styles
+***************************************************************/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+h1 {
+    font-size: 30px;
+}
+
+/* Header
+***************************************************************/
+header {
+    background-color: #413C58;
+    color: #F1F2EB;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Intro
+***************************************************************/
+.intro {
+    padding:10px;
+}
+
+/* Definition
+***************************************************************/
+.definition-wrapper {
+    margin: 0 auto;
+    background-color: #EDDEA4;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Input
+***************************************************************/
+.input-wrapper {
+    max-width: 500px;
+    margin: 10px auto;
+}
+#quiz-area {
+    width: 100%;    
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 5px solid rgba(162, 0, 32, 0.424);
+    border-radius: 8px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    resize: none;
+    font-size: 16px;
+}
+#quiz-area:focus {
+    outline: 0;
+    border: 5px solid rgba(162, 0, 32, 0.678);
+}
+
+/* Countdown and button
+***************************************************************/
+.meta {
+    margin: 1em;
+}
+.countdown {
+    font-size:1.5em;
+    margin: 0 auto;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.btn-wrapper {
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn {
+    background-color: #413C58;
+    border: 2px solid #413C58;
+    color: #F1F2EB;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    width: 90px;
+    height: 40px;
+    margin-right: 5px;
+    outline: 0;
+    font-size: 16px;
+}
+.btn:hover:not([disabled]) {
+    cursor: pointer;
+    background-color:  #F1F2EB;
+    color: #413C58;
+}
+.btn[disabled] {
+    cursor: not-allowed;
+}
+
+/* Points
+***************************************************************/
+.points-earned {
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #EDDEA4;
+    max-width: 500px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#points {
+    font-size: 22px;
+}
