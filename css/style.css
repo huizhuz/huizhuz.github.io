@@ -124,9 +124,13 @@ nav a{
 
 /* Project showcase
 ------------------------------*/
-.links-to-projects{
+.links-to-projects a{
     display: block;
-    padding: 15px 20px;
+    width: 40%;
+    background-color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
 }
 
 #projects{
@@ -185,5 +189,8 @@ p + h3{
     }
     .profile-img{
         width: 200px;
+    }
+    .links-to-projects a{
+        width: 80%;
     }
 }
