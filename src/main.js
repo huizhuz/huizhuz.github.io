@@ -7,11 +7,11 @@ import LineBreak from './common/LineBreak.vue'
 import Block from './common/Block.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faEnvelope, faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faBars, faEnvelope, faGithub, faLinkedinIn)
+library.add(faBars, faEnvelope, faGithub, faLinkedinIn, faAngleDoubleRight)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

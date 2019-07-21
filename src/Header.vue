@@ -19,10 +19,10 @@
 				</span>
 
 				<div v-if="show" class="mini-nav-content">
-					<router-link to="/education" class="mini-nav-item" @click.native="hideMenu">Education</router-link>
-					<router-link to="/projects" class="mini-nav-item" @click.native="hideMenu">Projects</router-link>
-					<router-link to="/teaching" class="mini-nav-item" @click.native="hideMenu">Teaching Experience</router-link>
-					<router-link to="/contact" class="mini-nav-item" @click.native="hideMenu">Contact Me</router-link>
+					<router-link to="/education" class="mini-nav-item" @click.native="hideMenu">Education <font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon></router-link>
+					<router-link to="/projects" class="mini-nav-item" @click.native="hideMenu">Projects <font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon></router-link>
+					<router-link to="/teaching" class="mini-nav-item" @click.native="hideMenu">Teaching Experience <font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon></router-link>
+					<router-link to="/contact" class="mini-nav-item" @click.native="hideMenu">Contact Me <font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon></router-link>
 				</div>
 			</div>
 			<!--nav wrapper-->
