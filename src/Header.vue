@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<div v-if="show" class="page-cover" @click="hideMenu"></div>
 		<div class="nav">
 			<div class="title-wrapper">
 				<img src="./images/bamboo.png" alt="icon" class="icon" />
@@ -17,13 +18,30 @@
 				<span @click="showMenu">
 					<font-awesome-icon style="font-size: 1.2rem" icon="bars" />
 				</span>
-
-				<div v-if="show" class="mini-nav-content">
-					<router-link to="/education" class="mini-nav-item" @click.native="hideMenu">Education <font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon></router-link>
-					<router-link to="/projects" class="mini-nav-item" @click.native="hideMenu">Projects <font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon></router-link>
-					<router-link to="/teaching" class="mini-nav-item" @click.native="hideMenu">Teaching Experience <font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon></router-link>
-					<router-link to="/contact" class="mini-nav-item" @click.native="hideMenu">Contact Me <font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon></router-link>
-				</div>
+				<transition name="slide">
+					<div v-if="show" class="mini-nav-content">
+						<router-link to="/" class="mini-nav-item" @click.native="hideMenu">
+							Home
+							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
+						</router-link>
+						<router-link to="/education" class="mini-nav-item" @click.native="hideMenu">
+							Education
+							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
+						</router-link>
+						<router-link to="/projects" class="mini-nav-item" @click.native="hideMenu">
+							Projects
+							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
+						</router-link>
+						<router-link to="/teaching" class="mini-nav-item" @click.native="hideMenu">
+							Teaching Experience
+							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
+						</router-link>
+						<router-link to="/contact" class="mini-nav-item" @click.native="hideMenu">
+							Contact Me
+							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
+						</router-link>
+					</div>
+				</transition>
 			</div>
 			<!--nav wrapper-->
 		</div>
@@ -40,7 +58,7 @@
 		},
 		methods: {
 			showMenu: function() {
-				this.show = true;
+				this.show = !this.show;
 			},
 			hideMenu: function() {
 				this.show = false;
@@ -60,7 +78,6 @@
 		padding: 20px;
 		align-items: center;
 	}
-
 	.title-wrapper {
 		display: flex;
 		justify-content: flex-start;
@@ -103,12 +120,7 @@
 		font-size: 1rem;
 		text-transform: uppercase;
 	}
-	.mini-nav-item {
-		height: 2rem;
-		text-decoration: none;
-		text-align: right;
-		color: white;
-	}
+
 	.mini-nav-content {
 		position: absolute;
 		top: 4rem;
@@ -116,10 +128,22 @@
 		display: flex;
 		flex-flow: column;
 		justify-content: flex-start;
-		background-color: #052855b6;
+		background: linear-gradient(#050320be, #1a0224d7);
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-position: bottom;
 		min-width: 160px;
-		padding: 12px 16px;
-		z-index: 1;
+		padding: 1rem 1rem 0 1rem;
+		border-radius: 3px;
+		transition: 0.5s;
+		z-index: 3;
+	}
+	.mini-nav-item {
+		height: 3rem;
+		text-decoration: none;
+		text-align: right;
+		color: white;
+		z-index: 4;
 	}
 	.mini-nav-wrapper:hover {
 		color: gray;
@@ -172,6 +196,46 @@
 		}
 		.nav {
 			display: flex;
+		}
+		.page-cover {
+			position: fixed;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			height: 100vh;
+			width: 100vw;
+			z-index: 2;
+		}
+	}
+	@media screen and (max-width: 415px) {
+		.nav {
+			width: 90vw;
+			overflow: hidden;
+		}
+		.mini-nav-content {
+			padding: 4rem 1rem 0 1rem;
+			position: fixed;
+			top: 0rem;
+			left: 0rem;
+			height: 100vh;
+			width: 75vw;
+			border-radius: 0;
+			background-color: yellow;
+		}
+		.mini-nav-item {
+			text-align: left;
+		}
+		.slide-enter-active {
+			transition: all 0.3s ease;
+		}
+		.slide-leave-active {
+			transition: all 0.3s ease;
+		}
+		.slide-enter {
+			transform: translate(-100%, 0);
+		}
+		.slide-leave-to {
+			transform: translate(-100%, 0);
 		}
 	}
 </style>

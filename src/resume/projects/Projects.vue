@@ -71,10 +71,10 @@
 		height: 70vmin;
 		max-width: 100vw;
 		background: linear-gradient(
-				rgba(245, 190, 41, 0.315),
-				rgba(245, 190, 41, 0.1)
+				rgba(248, 250, 227, 0.315),
+				rgba(243, 235, 212, 0.1)
 			),
-			url("./../../images/projects.jpeg") no-repeat fixed;
+			url("./../../images/projects.jpg") no-repeat fixed;
 		background-position: center;
 		background-size: cover;
 		display: flex;
