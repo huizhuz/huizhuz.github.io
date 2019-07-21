@@ -21,7 +21,7 @@
         props: ["project"],
         methods: {
             goToLink(){
-                location.href = this.project.link;
+				window.open(this.project.link);
             }
         }
 	};
