@@ -17,6 +17,17 @@
 			return {
 				projects: [
 					{
+						name: "Musec - an Eshop for musical instruments",
+						link: "https://github.com/huizhuz/Vue-Eshop",
+						buttonName: "Go shopping",
+						description: [
+							"Developed by Vue.js with Vue-Router and Vuex.",
+							"Responsive design using flex, grid and media query.",
+							"Connected to Firebase database management system.",
+							"Functionality: Register, login, shopping and checkout. "
+						]
+					},
+					{
 						name: "A stock trading app",
 						link: "https://github.com/huizhuz/Vue-StockApp",
 						buttonName: "See code on Github",
