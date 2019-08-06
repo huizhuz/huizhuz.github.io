@@ -18,7 +18,7 @@
 				projects: [
 					{
 						name: "Musec - an Eshop for musical instruments",
-						link: "https://github.com/huizhuz/Vue-Eshop",
+						link: "https://huizhuz.github.io/Vue-Eshop",
 						buttonName: "Go shopping",
 						description: [
 							"Developed by Vue.js with Vue-Router and Vuex.",
