@@ -9,7 +9,8 @@
 			<p>
 				<i>Skill set:</i>
 			</p>
-			<ul>
+			<p>
+				<ul>
 				<li>
 					Proficient front-end developing skills with standardized HTML5, CSS3, JavaScript.
 					Familiar with ES6 standard.
@@ -22,6 +23,8 @@
 				<li>Experience with Restful API, and study experience with R and Python.</li>
 				<li>Comfortable with version control system (Git).</li>
 			</ul>
+			</p>
+			
 			<v-block></v-block>
 			<v-block></v-block>
 		</div>
