@@ -5,18 +5,18 @@
 				<h1>Huizhu Zhang</h1>
 				<h2>Welcome to my page</h2>
 				<h3>Front-end Developer | Language Educator</h3>
-				<p>As a front-end developer, I specialize in designing and creating web pages using HTML/CSS and Javascript. As a language educator, I focus on creating warm and inviting learning environments and content-based curriculum development.</p>
+				<p>A Software Engineer focused on Frontend development, experienced with building granular single page application. Actively searching fulltime positions or internships in front end development.</p>
                 <v-block></v-block>
-                <p><i>My skills: </i>
-                    <ul>
-                        <li>HTML/CSS, JavaScript, Vue.js</li>
-                        <li>Python, R</li>
-                        <li>Npm, Webpack, Bootstrap, jQuery, Sass</li>
-                        <li>Version control system (Git)</li>
-                        <li>Data structure and algorithm</li>
-                        <li>Wix.com, Wordpress</li>
+				<p><i>Skill set: <i></p>
+                <ul>
+                    <li>Proficient front-end developing skills with standardized HTML5, CSS3, JavaScript.
+Familiar with ES6 standard.</li>
+                    <li>Single page application development experience with ReactJS (JSX) and Vue.js.</li>
+                    <li>Great sensibility to web application design and responsive web development.
+Comfortable with Sass and third-party packages like Element and Bootstrap.</li>
+                    <li>Experience with Restful API, and study experience with R and Python.</li>
+                    <li>Comfortable with version control system (Git).</li>
                     </ul>
-                </p>
                 <v-block></v-block>
                 <v-block></v-block>
 			</div>

@@ -17,6 +17,17 @@
 			return {
 				projects: [
 					{
+						name: "Burger Builder",
+						link: "https://huizhuz.github.io/React-BurgerBuilder",
+						buttonName: "Order Your Burger",
+						description: [
+							"This is an in-progress React course project.",
+							"Developed by React.js with Redux and Routing.",
+							"Connected to Firebase database management system.",
+							"Functionality: Dynamically build a burger and place an order."
+						]
+					},
+					{
 						name: "Musec - an Eshop for musical instruments",
 						link: "https://huizhuz.github.io/Vue-Eshop",
 						buttonName: "Go shopping",
