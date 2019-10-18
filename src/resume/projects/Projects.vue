@@ -17,6 +17,16 @@
 			return {
 				projects: [
 					{
+						name: "Vocabuilder",
+						link: "https://huizhuz.github.io/vocabuilder",
+						buttonName: "Build your vocabulary now!",
+						description: [
+							"This is a create-react-app project.",
+							"Developed by React.js with Routing.",
+							"Connected to Firebase database management system."
+						]
+					},
+					{
 						name: "Burger Builder",
 						link: "https://huizhuz.github.io/React-BurgerBuilder",
 						buttonName: "Order Your Burger",
