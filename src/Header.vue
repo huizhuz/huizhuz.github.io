@@ -9,8 +9,9 @@
 
 			<div class="nav-wrapper">
 				<router-link to="/education" class="nav-item">Education</router-link>
+				<router-link to="/work" class="nav-item">Work</router-link>
 				<router-link to="/projects" class="nav-item">Projects</router-link>
-				<router-link to="/teaching" class="nav-item">Teaching Experience</router-link>
+				<router-link to="/teaching" class="nav-item">Teaching</router-link>
 				<router-link to="/contact" class="nav-item">Contact Me</router-link>
 			</div>
 
@@ -28,12 +29,16 @@
 							Education
 							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
 						</router-link>
+						<router-link to="/work" class="mini-nav-item" @click.native="hideMenu">
+							Work
+							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
+						</router-link>
 						<router-link to="/projects" class="mini-nav-item" @click.native="hideMenu">
 							Projects
 							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
 						</router-link>
 						<router-link to="/teaching" class="mini-nav-item" @click.native="hideMenu">
-							Teaching Experience
+							Teaching
 							<font-awesome-icon style="font-size: 0.7rem" icon="angle-double-right"></font-awesome-icon>
 						</router-link>
 						<router-link to="/contact" class="mini-nav-item" @click.native="hideMenu">
@@ -98,7 +103,7 @@
 	.nav-wrapper {
 		display: grid;
 		justify-content: space-between;
-		grid-template-columns: auto auto auto auto;
+		grid-template-columns: auto auto auto auto auto;
 	}
 	.nav-item {
 		text-decoration: none;

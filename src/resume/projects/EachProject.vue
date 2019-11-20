@@ -9,8 +9,7 @@
 			>{{item}}</li>
 		</ul>
 		</div>
-		<div>
-			<line-break></line-break>
+		<div class="button">
 			<v-button :buttonName="project.buttonName" @click.native="goToLink"></v-button>
 		</div>
 	</div>
@@ -34,9 +33,19 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		padding: 1rem;
+		border: 1px solid #ccc;
+		margin: 0.8rem;
+		border-radius: 10px;
+		transition: all 0.4s ease;
+	}
+	.each-project:hover{
+		box-shadow: #ccc 3px 4px 4px;
+		cursor: default;
+		transform: translateY(-1px);
 	}
 	h3 {
-		margin-top: 2.5rem;
+		margin-top: 1rem;
 	}
 	a {
 		text-decoration: none;
@@ -51,5 +60,8 @@
 	}
 	a:selected {
 		color: gray;
+	}
+	.button{
+		margin: 2rem 0;
 	}
 </style>

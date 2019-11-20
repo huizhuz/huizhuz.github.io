@@ -17,6 +17,24 @@
 			return {
 				projects: [
 					{
+						name: "TICKLIST",
+						link: "https://huizhuz.github.io/ticklist",
+						buttonName: "Manage your tasks!",
+						description: [
+							"This is a create-react-app project.",
+							"Functionality: create, edit and delete folders and tasks and set task priority"
+						]
+					},
+					{
+						name: "Find Latest Subreddit",
+						link: "https://huizhuz.github.io/find-latest-subreddit",
+						buttonName: "Find the newest post now!",
+						description: [
+							"This is an electron desktop app powered by Angular8.",
+							"Functionality: after user types in one subreddit to a form field, fetchand display the latest post from that subreddit and the comments for that post by sending an http request."
+						]
+					},
+					{
 						name: "Vocabuilder",
 						link: "https://huizhuz.github.io/vocabuilder",
 						buttonName: "Build your vocabulary now!",
@@ -133,6 +151,7 @@
 	.project-wrapper {
 		max-width: 80vw;
 		margin: 0 auto;
+		margin-top: 2rem;
 		display: grid;
 		justify-content: space-between;
 	}

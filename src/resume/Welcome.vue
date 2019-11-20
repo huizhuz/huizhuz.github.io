@@ -15,7 +15,8 @@
 					Proficient front-end developing skills with standardized HTML5, CSS3, JavaScript.
 					Familiar with ES6 standard.
 				</li>
-				<li>Single page application development experience with ReactJS (JSX) and Vue.js.</li>
+				<li>Single page application development experience with ReactJS (JSX), Angular8 and Vue.js.</li>
+				<li>Experience with desktop application development using Electron.</li>
 				<li>
 					Great sensibility to web application design and responsive web development.
 					Comfortable with Sass and third-party packages like Element and Bootstrap.
