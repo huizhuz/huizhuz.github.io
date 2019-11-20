@@ -104,6 +104,7 @@
 		display: grid;
 		justify-content: space-between;
 		grid-template-columns: auto auto auto auto auto;
+		align-items: baseline;
 	}
 	.nav-item {
 		text-decoration: none;
@@ -115,6 +116,10 @@
 		transition: 0.5s;
 		text-transform: uppercase;
 		color: black;
+	}
+	.router-link-active{
+		font-size: 1.3rem;
+		border-bottom: 1px dashed #ccc;
 	}
 
 	.mini-nav-wrapper {
